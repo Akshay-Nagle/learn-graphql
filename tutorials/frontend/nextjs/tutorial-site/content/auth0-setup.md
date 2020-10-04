@@ -1,7 +1,7 @@
 ---
 title: "Auth0 Setup"
 metaTitle: "Auth0 Setup | Next.js GraphQL Serverless Tutorial"
-metaDescription: "The Auth integration will be done with Auth0. In this step we will create a new application with Auth0, configure Hasura with JWT secret and create necessary rules in Auth0"
+metaDescription: "The Auth integration will be done with Auth0. In this step, we will create a new application with Auth0, configure Hasura with JWT secret and create necessary rules in Auth0."
 ---
 
 ## Create Auth0 Application
@@ -14,7 +14,7 @@ metaDescription: "The Auth integration will be done with Auth0. In this step we 
 
 ![Create Auth0 App](https://graphql-engine-cdn.hasura.io/learn-hasura/assets/graphql-hasura/create-auth0-app.png)
 
-6. In the settings of the application, we will add appropriate (e.g: http://localhost:3000/callback) URLs as Allowed Callback URLs and Allowed Web Origins. We can also add domain specific URLs as well for the app to work. (e.g: https://myapp.com/callback). 
+6. In the settings of the application, we will add appropriate (e.g., http://localhost:3000/callback) URLs as Allowed Callback URLs and Allowed Web Origins. We can also add domain-specific URLs as well for the app to work. (e.g: https://myapp.com/callback). 
 
 This would be the URL of the frontend app which you will deploy later. You can ignore this, for now. You can always come back later and add the necessary URLs.
 
@@ -24,9 +24,9 @@ We need to create an API on Auth0 so that we can make the accessToken a valid JW
 
 ![Create Auth0 API](https://graphql-engine-cdn.hasura.io/learn-hasura/assets/graphql-hasura/auth0-api-create.png)
 
-Now in the pop-up that appears, give the name of the API and the identifier. We can technically give any value. 
+Now in the pop-up that appears, give the name of the API and the identifier. We can technically provide any value. 
 
-Let's say the name is `hasura` and the identifier is `https://hasura.io/learn`.
+Let's say the name is `hasura`, and the identifier is `https://hasura.io/learn`.
 
 ![Auth0 API](https://graphql-engine-cdn.hasura.io/learn-hasura/assets/graphql-hasura/auth0-api-audience.png)
 
@@ -42,4 +42,4 @@ Add `http://localhost:3000/api/callback` to the list of Allowed Callback URLs.
 
 ![Add callback URL](https://graphql-engine-cdn.hasura.io/learn-hasura/assets/graphql-nextjs/add-callback-url.png).
 
-Also make sure to add `http://localhost:3000` to the list of Allowed Logout URLs.
+Also, make sure to add `http://localhost:3000` to the list of Allowed Logout URLs.
